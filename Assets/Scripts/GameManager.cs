@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 enum GameState {Start,Presentation,Search,Results}
 public class GameManager : MonoBehaviour
@@ -38,6 +39,12 @@ public class GameManager : MonoBehaviour
     private string _preItemPresentationText;
     [SerializeField]
     private string _postItemPresentationText;
+    [SerializeField]
+    private VideoPlayer _videoPlayer;
+
+    [SerializeField]
+    private List<VideoClip> _videoClips = new();
+
 
     private ItemData _selectedItemData;
 
@@ -100,6 +107,10 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+    private int _dialogueIndex;
+    private void OnVideoEnd() {
+        DialogueManager.instance.StartDialogue(_dialogues[_dialogueIndex]);
+    }
 
     private void StartItemPresentation() {
 
@@ -118,18 +129,22 @@ public class GameManager : MonoBehaviour
     public void VerifyItem(ItemData itemData) {
         _timer.StopTimer();
         _gameState = GameState.Results;
-        int dialogueIndex = 3;
         if (itemData) {
             if(itemData == _selectedItemData) {
                 _winCount++;
-                dialogueIndex = 1;
+                _videoPlayer.clip = _videoClips[0];
+                _dialogueIndex = 1;
             } else {
                 _lossCount++;
-                dialogueIndex = 2;
+                _videoPlayer.clip = _videoClips[1];
+                _dialogueIndex = 2;
             }
+            _videoPlayer.Play();
+        } else {
+            DialogueManager.instance.StartDialogue(_dialogues[3]);
         }
         Player.Instance.EnablePlayer(false);
-        DialogueManager.instance.StartDialogue(_dialogues[dialogueIndex]);
+       
     }
 
     public void TimerEnd() {
@@ -152,6 +167,8 @@ public class GameManager : MonoBehaviour
     }
 
     private void Start() {
+        _videoPlayer.loopPointReached += ctx => OnVideoEnd();
+        
         Player.Instance.EnablePlayer(false);
         DialogueManager.instance.StartDialogue(_dialogues[0]);
     }
