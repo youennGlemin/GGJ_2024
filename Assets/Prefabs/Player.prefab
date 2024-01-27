@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6714039302761909810}
   - component: {fileID: 6714039302761909805}
   - component: {fileID: 6714039302761909804}
-  - component: {fileID: 6714039302761909808}
+  - component: {fileID: 4069037149215838451}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0, g: 0.3693924, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8a5a8c294aff77941a028f05a5cdec05, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -100,13 +100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28905c3aaae522a42b92e1f9611d7c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
+  _moveSpeed: 7
   _rb: {fileID: 6714039302761909805}
   _animator: {fileID: 6714039302761909804}
   _holdItemImage: {fileID: 0}
   _interactableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!50 &6714039302761909805
 Rigidbody2D:
   serializedVersion: 4
@@ -148,8 +148,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &6714039302761909808
-CapsuleCollider2D:
+--- !u!61 &4069037149215838451
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -162,5 +162,15 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.25, y: 4.4}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.25, y: 4.4}
+  m_EdgeRadius: 0
