@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db164828883040d42bddd42c643e81c4, type: 3}
   m_Name: Javel
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: ed4d1ee1a7584ac42b30af6a9a1e8699, type: 3}
   description: 

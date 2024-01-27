@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db164828883040d42bddd42c643e81c4, type: 3}
   m_Name: Liquide_Vaiselle
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 0d926c0a46534ab4cb2c30f1c379549f, type: 3}
   description: 
