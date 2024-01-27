@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ccbe517205a754647a0a1a14fd066636, type: 3}
   description: "Si tu peux faire quelque chose de plus que te tra\xEEner mollement,
-    apporte-moi une serpill\xE8re. J'esp\xE8re que tu peux au moins g\xE9rer \xE7a,
-    m\xEAme si c'est douteux."
+    apporte-moi une serpill\xE8re et n'essaie m\xEAme pas de prendre ma perruque"
