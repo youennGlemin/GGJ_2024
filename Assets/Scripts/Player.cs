@@ -79,7 +79,10 @@ public class Player : MonoBehaviour
 
         if (_hit.collider.gameObject.TryGetComponent(out ItemHolder item)) {
             CollectItem(item);
-        } else {
+        }
+        else if(_hit.collider.gameObject.TryGetComponent(out Interactable interactable)) {
+            interactable.Interact();
+        }else {
             GameManager.Instance.VerifyItem(_holdItemData);
         }
     }
