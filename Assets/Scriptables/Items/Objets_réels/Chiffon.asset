@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Chiffon
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 33c63699d3dbe5e4499e3e805250c116, type: 3}
-  description: 
+  description: "Puisque tu n'es bon \xE0 rien d'autre, pourrais-tu au moins me rendre
+    service en m'apportant un fichu chiffon?"
