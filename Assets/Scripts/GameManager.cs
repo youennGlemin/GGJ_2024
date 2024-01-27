@@ -116,6 +116,7 @@ public class GameManager : MonoBehaviour
         _timer.StartTimer(_allowedTime);
     }
     public void VerifyItem(ItemData itemData) {
+        _timer.StopTimer();
         _gameState = GameState.Results;
         int dialogueIndex = 3;
         if (itemData) {

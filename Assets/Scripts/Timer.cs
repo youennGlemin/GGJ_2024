@@ -10,9 +10,14 @@ public class Timer : MonoBehaviour {
 
     private float _remainingTime;
 
+    private Coroutine c;
+
     public void StartTimer(float time) {
         _remainingTime = time;
-        StartCoroutine(TimerClock());
+        c = StartCoroutine(TimerClock());
+    }  
+    public void StopTimer() {
+        StopCoroutine(c);
     }
 
     private void DisplayTimer() {
@@ -25,6 +30,7 @@ public class Timer : MonoBehaviour {
             _remainingTime -= 1f;
         }
         GameManager.Instance.TimerEnd();
+        StopTimer();
     }
     private void Update() {
         DisplayTimer();

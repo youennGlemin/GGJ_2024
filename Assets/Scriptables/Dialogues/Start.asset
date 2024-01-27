@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: Start
   m_EditorClassIdentifier: 
   lines:
+  - characterName: Youenn le narrateur
+    characterSprite: {fileID: 0}
+    text: Le truc rouge, c'est la maman, les hibou c'est des items, y'en a que deux
+      differents parce que flemme
+    audioClip: {fileID: 0}
+  - characterName: Youenn le narrateur
+    characterSprite: {fileID: 0}
+    text: "H\xE9sitez pas a me mp ^^"
+    audioClip: {fileID: 0}
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: Hi, I'm your mom ^^
