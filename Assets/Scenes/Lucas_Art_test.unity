@@ -502,12 +502,12 @@ MonoBehaviour:
   - {fileID: 1669070786}
   - {fileID: 1476843321}
   _itemDatas:
-  - {fileID: 11400000, guid: 6382dd55746881a46934885b15be20be, type: 2}
-  - {fileID: 11400000, guid: 862d3b1174e10194cb277674d69fff31, type: 2}
-  - {fileID: 11400000, guid: 6382dd55746881a46934885b15be20be, type: 2}
-  - {fileID: 11400000, guid: 862d3b1174e10194cb277674d69fff31, type: 2}
-  - {fileID: 11400000, guid: 6382dd55746881a46934885b15be20be, type: 2}
-  - {fileID: 11400000, guid: 862d3b1174e10194cb277674d69fff31, type: 2}
+  - {fileID: 11400000, guid: 92387c25753f52f4a9379beefdc72b2c, type: 2}
+  - {fileID: 11400000, guid: edc1ebff728ffb246acb6239350a754a, type: 2}
+  - {fileID: 11400000, guid: 7b07866fee6e20542a2554813a03fd1e, type: 2}
+  - {fileID: 11400000, guid: b5d22f35122e67f45adb5a537a47efdc, type: 2}
+  - {fileID: 11400000, guid: dd54e6236006aff428643f5f48547c6d, type: 2}
+  - {fileID: 11400000, guid: eab56a5ec223d314ab03a01793299cb4, type: 2}
   _dialogues:
   - {fileID: 11400000, guid: f2563328fbe03e049bac17ba3ddaf525, type: 2}
   - {fileID: 11400000, guid: 30336ab617dc2544ba4c2044a96004f3, type: 2}
@@ -1849,6 +1849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LosePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 531078233482977989, guid: 6941a3c9c4e07d54f9c1ef1e75007bb4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 531078233482978011, guid: 6941a3c9c4e07d54f9c1ef1e75007bb4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1869,6 +1873,10 @@ PrefabInstance:
     - target: {fileID: 5421810138278544602, guid: 3e89281df36f88546a0d6c7a3e867cf0, type: 3}
       propertyPath: m_Name
       value: WinPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421810138278544602, guid: 3e89281df36f88546a0d6c7a3e867cf0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5421810138278544603, guid: 3e89281df36f88546a0d6c7a3e867cf0, type: 3}
       propertyPath: m_Pivot.x
@@ -2222,6 +2230,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1237279317}
     m_Modifications:
+    - target: {fileID: 8005221408096390910, guid: 03fa1dd06908afb4eade01f1a386d083, type: 3}
+      propertyPath: m_fontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005221408096390910, guid: 03fa1dd06908afb4eade01f1a386d083, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8005221409707450593, guid: 03fa1dd06908afb4eade01f1a386d083, type: 3}
       propertyPath: m_Name
       value: Dialogue

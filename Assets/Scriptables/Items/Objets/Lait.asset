@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db164828883040d42bddd42c643e81c4, type: 3}
-  m_Name: Sceau
+  m_Name: Lait
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 5bad75a477bff754f8e57ff0332c2800, type: 3}
-  description: "Puisque l'intelligence a prit cong\xE9 chez toi, pourrais-tu te pousser
-    \xE0 apporter un simple sceau?  "
+  sprite: {fileID: 21300000, guid: fd89a7363a42ca6438798e7385c2ca55, type: 3}
+  description: Puisque tu as du mal avec les choses simples, apporte-moi une bouteille
+    de lait et non, se ne sont pas tes amis.

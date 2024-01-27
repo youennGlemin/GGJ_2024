@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db164828883040d42bddd42c643e81c4, type: 3}
-  m_Name: Chiffon
+  m_Name: Chandellier
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 33c63699d3dbe5e4499e3e805250c116, type: 3}
-  description: "Puisque tu n'es bon \xE0 rien d'autre, pourrais-tu au moins me rendre
-    service en m'apportant un fichu chiffon?"
+  sprite: {fileID: 21300000, guid: c428b477699a9f04dba183c52e7a893a, type: 3}
+  description: "C'est path\xE9tique \xE0 quel point tu es incomp\xE9tent. Apporte-moi
+    un chandelier, et NON tu n'essaies pas d'imiter Tarzan !"

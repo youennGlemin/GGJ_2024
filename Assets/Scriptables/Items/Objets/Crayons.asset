@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db164828883040d42bddd42c643e81c4, type: 3}
-  m_Name: Balais
+  m_Name: Crayons
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 6b9c2a972fc85b94c87d5015c58e9ca0, type: 3}
-  description: Peux-tu enfin faire quelque chose de productif pour changer? Allez,
-    apporte-moi ce balai sans essayer de voler avec.
+  sprite: {fileID: 21300000, guid: 6718e811a26875d4d8e9863f69367455, type: 3}
+  description: "C'est incroyable \xE0 quel point tu es incapable. Peux-tu au moins
+    r\xE9ussir \xE0 apporter un simple crayon sans faire d'erreur?"
