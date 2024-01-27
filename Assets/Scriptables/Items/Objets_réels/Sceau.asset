@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Sceau
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5bad75a477bff754f8e57ff0332c2800, type: 3}
-  description: "Puisque tu sembles incapable de faire quoi que ce soit d'intelligent,
-    pourrais-tu te pousser \xE0 apporter un simple sceau? Ou est-ce trop compliqu\xE9
-    pour ton esprit limit\xE9?"
+  description: "Puisque l'intelligence a prit cong\xE9 chez toi, pourrais-tu te pousser
+    \xE0 apporter un simple sceau?  "
