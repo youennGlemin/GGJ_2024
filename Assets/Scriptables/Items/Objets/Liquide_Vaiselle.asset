@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db164828883040d42bddd42c643e81c4, type: 3}
-  m_Name: Eponge
+  m_Name: Liquide_Vaiselle
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 295956fe2fb29c048b13ac566b1cf41b, type: 3}
-  description: "Si tu es capable de faire quelque chose d'utile, apporte-moi une
-    \xE9ponge. J'esp\xE8re que c'est \xE0 la port\xE9e de tes capacit\xE9s limit\xE9es."
+  sprite: {fileID: 21300000, guid: 00f9a1d9d402f314d9873311d200426c, type: 3}
+  description: "Tu pourrais, pour une fois, \xEAtre utile et m'apporter du liquide
+    vaisselle? Ou bien, est-ce trop demander pour toi?"
