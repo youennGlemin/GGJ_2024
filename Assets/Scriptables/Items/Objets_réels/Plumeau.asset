@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Plumeau
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 733042509b0ca1a488991b4b43083b52, type: 3}
-  description: 
+  description: "Tu ne sais peut-\xEAtre rien faire d'intelligent, mais peux-tu au
+    moins apporter un fichu plumeau? \xC7a doit bien \xEAtre \xE0 ta port\xE9e, non?"

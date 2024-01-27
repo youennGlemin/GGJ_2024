@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Poubelle
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5306ae570fa522f4c8aa74ad67539da4, type: 3}
-  description: 
+  description: "Puisque tu excelles dans l'inutilit\xE9, essaie au moins de te montrer
+    utile une fois dans ta vie. Apporte-moi une poubelle et n'essaie m\xEAme pas
+    de mettre ta t\xEAte dedans"

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Liquide_Vaiselle
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 0d926c0a46534ab4cb2c30f1c379549f, type: 3}
-  description: 
+  description: "Tu pourrais, pour une fois, \xEAtre utile et m'apporter du liquide
+    vaisselle? Ou bien, est-ce trop demander pour toi?"
