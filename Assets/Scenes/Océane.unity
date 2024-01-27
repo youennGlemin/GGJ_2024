@@ -4407,34 +4407,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6714039302761909810, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
-      propertyPath: _moveSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714039302761909810, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
-      propertyPath: _holdItemImage
-      value: 
-      objectReference: {fileID: 1378899029}
-    - target: {fileID: 6714039302761909810, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
-      propertyPath: _interactableLayer.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714039302761909811, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a5a8c294aff77941a028f05a5cdec05, type: 3}
-    - target: {fileID: 6714039302761909811, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714039302761909811, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714039302761909811, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
 --- !u!1001 &8005221409598809006
