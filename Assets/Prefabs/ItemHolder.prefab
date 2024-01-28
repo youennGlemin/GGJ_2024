@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 6677616028481282206}
   _polygonCollider2D: {fileID: 6677616028481282203}
+  itemPosition: 0
   itemData: {fileID: 11400000, guid: 6382dd55746881a46934885b15be20be, type: 2}
 --- !u!212 &6677616028481282206
 SpriteRenderer:
