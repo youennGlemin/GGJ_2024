@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private string _postItemPresentationText;
     [SerializeField]
+    private AudioClip BLABLABLA;
+    [SerializeField]
     private RawImage _videoPlayerImage;
     [SerializeField]
     private VideoPlayer _videoPlayer;
@@ -155,7 +157,7 @@ public class GameManager : MonoBehaviour
         _gameState = GameState.Presentation;
         Player.Instance.EnablePlayer(false);
         DialogueData dialogueData = ScriptableObject.CreateInstance<DialogueData>();
-        Line line = new Line("Mom", _preItemPresentationText + _selectedItemData.description + _postItemPresentationText, null);
+        Line line = new Line("Mom", _preItemPresentationText + _selectedItemData.description + _postItemPresentationText, BLABLABLA);
         dialogueData.lines = new Line[] { line };
         DialogueManager.instance.StartDialogue(dialogueData);
     }
@@ -209,6 +211,7 @@ public class GameManager : MonoBehaviour
         PrepareGame();
         StartItemPresentation();
     }
+
 
     public void ResetScene() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
