@@ -15,7 +15,7 @@ MonoBehaviour:
   lines:
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: "Tu t'es surpass\xE9 mon grand ! "
+    text: 'Tu t''es surpasse mon grand ! '
     audioClip: {fileID: 0}
   - characterName: Mom
     characterSprite: {fileID: 0}
@@ -23,17 +23,17 @@ MonoBehaviour:
     audioClip: {fileID: 0}
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: "Maman est impressionn\xE9e ! Tu as tout donn\xE9 ! "
+    text: 'Maman est impressionnee ! Tu as tout donne ! '
     audioClip: {fileID: 0}
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: "Pour te r\xE9compenser je vais remplir ta gamelle ce soir !"
+    text: Pour te recompenser je vais remplir ta gamelle ce soir !
     audioClip: {fileID: 0}
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: "Tu es plus utile que le chien, apr\xE8s tout !"
+    text: Tu es plus utile que le chien, apres tout !
     audioClip: {fileID: 0}
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: "Je savais que tu en avais les capacit\xE9s !"
+    text: Je savais que tu en avais les capacites !
     audioClip: {fileID: 0}

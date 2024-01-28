@@ -15,5 +15,13 @@ MonoBehaviour:
   lines:
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: You have no item to show me
+    text: TOI APPORTER OBJET, est-ce trop difficile a comprendre ?
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: Est-ce qu'on parle la meme langue ?
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: T'es stupide ou bien imbecile ?
     audioClip: {fileID: 0}
