@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
     private VideoPlayer _videoPlayer;
     [SerializeField]
     private VideoPlayer _videoPlayerPrefab;
+    //[SerializeField]
+    //private texture _videoPlayerPrefab;
 
     [SerializeField]
     private List<VideoClip> _videoClips = new();
