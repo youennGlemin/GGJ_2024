@@ -16,7 +16,7 @@ MonoBehaviour:
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: 'Mon impatience a des limites ! '
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 08064aaf6f4d1cd43bd7656f935eb421, type: 3}
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: "Tu ne battrais m\xEAme pas un escargot au 100 m\xE8tres ! "

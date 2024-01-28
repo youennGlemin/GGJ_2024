@@ -16,7 +16,7 @@ MonoBehaviour:
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: "Je ne m'attendais \xE0 rien mais je suis quand m\xEAme d\xE9\xE7u "
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 08064aaf6f4d1cd43bd7656f935eb421, type: 3}
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: "Je voulais t'appeler m\xE9diocrit\xE9 mais la pr\xE9fecture ne voulait
