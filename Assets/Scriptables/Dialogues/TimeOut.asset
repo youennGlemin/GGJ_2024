@@ -15,5 +15,13 @@ MonoBehaviour:
   lines:
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: You're so slow you make snails feel respected
+    text: 'Mon impatience a des limites ! '
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: "Tu ne battrais m\xEAme pas un escargot au 100 m\xE8tres ! "
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: 'Tu en prends du temps ! '
     audioClip: {fileID: 0}

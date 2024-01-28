@@ -50,7 +50,8 @@ public class GameManager : MonoBehaviour
     private VideoPlayer _videoPlayerPrefab;
     [SerializeField]
     private RenderTexture _videoPlayerTexture;
-
+    [SerializeField]
+    private AudioSource audioSource;
     [SerializeField]
     private List<VideoClip> _videoClips = new();
 
@@ -223,4 +224,13 @@ public class GameManager : MonoBehaviour
         Player.Instance.EnablePlayer(false);
         DialogueManager.instance.StartDialogue(_dialogues[0]);
     }
+
+    public void PlayClip(AudioClip clip){
+        audioSource.Stop();
+        audioSource.clip = clip;
+        audioSource.Play();
+        
+    }
+
+    public void Pause
 }
