@@ -108,6 +108,11 @@ MonoBehaviour:
   _interactableLayer:
     serializedVersion: 2
     m_Bits: 8
+  audioSource: {fileID: 6714039302491173412}
+  _stepSounds:
+  - {fileID: 8300000, guid: a56805573db42a14eb1c1e166d15cd9e, type: 3}
+  - {fileID: 8300000, guid: 8647b78a0f7ec274da3542563965f4f6, type: 3}
+  - {fileID: 8300000, guid: 6c2f5dc39e2c2ff4b967498ddab8a659, type: 3}
 --- !u!50 &6714039302761909805
 Rigidbody2D:
   serializedVersion: 4
