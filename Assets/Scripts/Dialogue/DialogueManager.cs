@@ -75,8 +75,6 @@ public class DialogueManager : MonoBehaviour {
             _currentDialogueData = value;
             toWrite = _currentDialogueData.lines[currentLineIndex].text;
             DisplayCharacters();
-            audioSource.Stop();
-            audioSource.clip = _currentDialogueData.lines[currentLineIndex].audioClip;
         }
     }
     private int currentLineIndex = 0;
@@ -123,7 +121,6 @@ public class DialogueManager : MonoBehaviour {
     private void DisplayCharacters() {
         //CharacterSpriteRenderer.sprite = currentDialogueData.lines[currentLineIndex].characterSprite;
         speakingCharacterNameText.text = currentDialogueData.lines[currentLineIndex].characterName;
-        audioSource.Play();
 
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 using UnityEngine.UI;
 
-enum GameState {Start,Presentation,Search,Results}
+enum GameState {Start,Presentation,Search,Results,End}
 public class GameManager : MonoBehaviour
 {
 
@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Results:
                 if (_winCount >= _requiredWins) {
-                    _videoPlayer.Prepare();
+                    _gameState = GameState.End;
                     _videoPlayer.clip = _videoClips[2];
 
 
@@ -127,9 +127,8 @@ public class GameManager : MonoBehaviour
                     _videoPlayerImage.texture = renderTexture;
                     _videoPlayer.Play();
                     _videoPlayerImage.color = new Color(1, 1, 1, 1);
-                    _winPanel.SetActive(true);
                 } else if (_lossCount >= _requiredLoss) {
-                    _videoPlayer.Prepare();
+                    _gameState = GameState.End;
                     _videoPlayer.clip = _videoClips[3];
 
                     RenderTexture renderTexture = new RenderTexture(_videoPlayerTexture);
@@ -137,7 +136,6 @@ public class GameManager : MonoBehaviour
                     _videoPlayerImage.texture = renderTexture;
                     _videoPlayer.Play();
                     _videoPlayerImage.color = new Color(1, 1, 1, 1);
-                    _losePanel.SetActive(true);
                 } else {
                     ResetGame();
                 }
@@ -151,6 +149,15 @@ public class GameManager : MonoBehaviour
     private void OnVideoEnd() {
         _videoPlayerImage.color = new Color(1,1,1,0);
         DialogueManager.instance.StartDialogue(_dialogues[_dialogueIndex]);
+        if(_gameState == GameState.End) {
+            if(_lossCount >= _requiredLoss) {
+                _losePanel.SetActive(true);
+
+            } else {
+                _winPanel.SetActive(true);
+
+            }
+        }
     }
 
     private void StartItemPresentation() {
@@ -172,7 +179,6 @@ public class GameManager : MonoBehaviour
         _gameState = GameState.Results;
 
         if (itemData) {
-            _videoPlayer.Prepare();
             if (itemData == _selectedItemData) {
                 _winCount++;
                 _videoPlayer.clip = _videoClips[0];
