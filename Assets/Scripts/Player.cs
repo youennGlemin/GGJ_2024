@@ -88,6 +88,7 @@ public class Player : MonoBehaviour
             interactable.Interact();
         }else if(_hit.collider.tag == "Mom") {
             GameManager.Instance.VerifyItem(_holdItemData);
+            audioSource.Play();
         }
     }
 
