@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 8d762952497cd464199b13a72eb45571, type: 3}
   description: "Si tu es capable de faire quelque chose d'utile, apporte-moi une
-    \xE9ponge. J'esp\xE8re que c'est \xE0 la port\xE9e de tes capacit\xE9s limit\xE9es."
+    eponge. J'espere que c'est \xE0 la portee de tes capacites limitees."
+  itemPosition: 1024

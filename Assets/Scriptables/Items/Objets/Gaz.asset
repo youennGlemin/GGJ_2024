@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Gaz
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ffe905bbad77e6c499445b05391aa7c9, type: 3}
-  description: "Prouve-moi que tu as au moins une once d'intelligence. Apporte-moi
-    une bonbonne de gaz . Par contre \xE9teins ce briquet !"
+  description: Prouve-moi que tu as au moins une once d'intelligence. Apporte-moi
+    une bonbonne de gaz . Par contre eteins ce briquet !
+  itemPosition: 16

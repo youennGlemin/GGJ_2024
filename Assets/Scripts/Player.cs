@@ -46,6 +46,10 @@ public class Player : MonoBehaviour
     private Image _holdItemImage;
     [SerializeField]
     private LayerMask _interactableLayer;
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    private List<AudioClip> _stepSounds;
 
     private float _direction;
 
@@ -79,15 +83,22 @@ public class Player : MonoBehaviour
 
         if (_hit.collider.gameObject.TryGetComponent(out ItemHolder item)) {
             CollectItem(item);
-        } else {
+        }
+        else if(_hit.collider.gameObject.TryGetComponent(out Interactable interactable)) {
+            interactable.Interact();
+        }else if(_hit.collider.tag == "Mom") {
             GameManager.Instance.VerifyItem(_holdItemData);
         }
     }
 
     private void CollectItem(ItemHolder item) {
+        Player.Instance.EnablePlayer(false);
+
         _holdItemData = item.itemData;
         _holdItemImage.sprite = _holdItemData.sprite;
         _holdItemImage.color = new Color(1,1,1,1);
+        _animator.Play("Grab");
+        audioSource.Play();
         item.Disable();
     }
 
@@ -99,7 +110,7 @@ public class Player : MonoBehaviour
 
     }
 
-    public void EnablePlayer(bool enable) {
+    public void EnablePlayer(bool enable ) {
         if (enable) {
             _controls.Enable();
         } else {
@@ -108,6 +119,12 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void PlayStepSound() {
+        audioSource.Stop();
+
+        audioSource.clip = _stepSounds[Random.Range(0, _stepSounds.Count - 1)];
+        audioSource.Play();
+    }
     private void Update() {
         _direction = _controls.controls_proto.Direction.ReadValue<float>();
     }
