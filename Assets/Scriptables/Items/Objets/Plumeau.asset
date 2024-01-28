@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Plumeau
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 24fde9750d8382742bb9814207aa65ea, type: 3}
-  description: "Tu ne sais peut-\xEAtre rien faire d'intelligent, mais peux-tu au
-    moins apporter un fichu plumeau? \xC7a doit bien \xEAtre \xE0 ta port\xE9e, non?"
+  description: "Tu ne sais peut-etre rien faire d'intelligent, mais peux-tu au moins
+    apporter un fichu plumeau? \xC7a doit bien etre a ta portee, non?"
   itemPosition: 64

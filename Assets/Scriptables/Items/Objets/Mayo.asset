@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mayo
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: f6f666437c33cea49be58a423a34f723, type: 3}
-  description: "Si tu ne peux m\xEAme pas g\xE9rer \xE7a, je me demande vraiment
-    \xE0 quoi tu sers. Apporte-moi un pot de mayo."
+  description: "Si tu ne peux meme pas gerer \xE7a, je me demande vraiment a quoi
+    tu sers. Apporte-moi un pot de mayo."
   itemPosition: 8193

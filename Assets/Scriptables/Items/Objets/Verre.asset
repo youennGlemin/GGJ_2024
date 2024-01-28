@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Verre
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: d80e78e73c1f18745a7b987332f5d419, type: 3}
-  description: "Fais-moi plaisir pour une fois, apporte-moi un verre. Si c'est au-dessus
-    de tes comp\xE9tences, je ne sais vraiment pas \xE0 quoi tu sers."
+  description: Fais-moi plaisir pour une fois, apporte-moi un verre. Si c'est au-dessus
+    de tes competences, je ne sais vraiment pas a quoi tu sers.
   itemPosition: 8193
