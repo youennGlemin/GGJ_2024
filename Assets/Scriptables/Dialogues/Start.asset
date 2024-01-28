@@ -16,8 +16,8 @@ MonoBehaviour:
   - characterName: Mamie
     characterSprite: {fileID: 0}
     text: Bon gamin, tu vas m'aider.
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 99026d79c30417843894ba76f33302c6, type: 3}
   - characterName: Mamie
     characterSprite: {fileID: 0}
     text: Tu vas faire autre chose de tes mains pour une fois.
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 99026d79c30417843894ba76f33302c6, type: 3}

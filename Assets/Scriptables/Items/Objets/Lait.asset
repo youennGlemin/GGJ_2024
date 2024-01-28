@@ -15,3 +15,4 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: fd89a7363a42ca6438798e7385c2ca55, type: 3}
   description: Puisque tu as du mal avec les choses simples, apporte-moi une bouteille
     de lait et non, se ne sont pas tes amis.
+  itemPosition: 1

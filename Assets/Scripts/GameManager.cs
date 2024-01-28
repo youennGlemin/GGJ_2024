@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
+using UnityEngine.UI;
 
 enum GameState {Start,Presentation,Search,Results}
 public class GameManager : MonoBehaviour
@@ -40,7 +41,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private string _postItemPresentationText;
     [SerializeField]
+    private RawImage _videoPlayerImage;
+    [SerializeField]
     private VideoPlayer _videoPlayer;
+    [SerializeField]
+    private VideoPlayer _videoPlayerPrefab;
 
     [SerializeField]
     private List<VideoClip> _videoClips = new();
@@ -66,15 +71,27 @@ public class GameManager : MonoBehaviour
         SelectItemData();
     }
     private void SpawnItems() {
-        List<ItemData> itemDatas = new();
-        foreach(ItemData itemData in _itemDatas) {
-            itemDatas.Add(itemData);
+        List<ItemData> itemdatas = new();
+        foreach (ItemData itemdata in _itemDatas) {
+            itemdatas.Add(itemdata);
         }
-        foreach(ItemHolder itemHolder in _itemHolders) {
-            ItemData randomItemData = itemDatas[Random.Range(0, itemDatas.Count - 1)];
-            itemHolder.Hydrate(randomItemData);
-            itemDatas.Remove(randomItemData);
+
+        foreach (ItemHolder itemHolder in _itemHolders) {
+                ItemData randomItemData = SearchForItemDataTaggedinList(itemHolder.itemPosition, itemdatas);
+                itemHolder.Hydrate(randomItemData);
+                itemdatas.Remove(randomItemData);
         }
+    }
+
+    private ItemData SearchForItemDataTaggedinList(ItemPosition itemPosition,List<ItemData> itemDatas) {
+
+        List<ItemData> itemDatasList = new();
+        foreach (ItemData itemdata in _itemDatas) {
+            if ((itemPosition & itemdata.itemPosition) == (itemdata.itemPosition)) {
+                itemDatasList.Add(itemdata);
+            }
+        }
+        return itemDatasList[Random.Range(0, itemDatasList.Count - 1)];
     }
 
     private void SelectItemData() {
@@ -96,8 +113,19 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Results:
                 if (_winCount >= _requiredWins) {
+                    _videoPlayer.Prepare();
+                    _videoPlayer.clip = _videoClips[2];
+
+
+                    _videoPlayer.Play();
+                    _videoPlayerImage.color = new Color(1, 1, 1, 1);
                     _winPanel.SetActive(true);
                 } else if (_lossCount >= _requiredLoss) {
+                    _videoPlayer.Prepare();
+                    _videoPlayer.clip = _videoClips[3];
+
+                    _videoPlayer.Play();
+                    _videoPlayerImage.color = new Color(1, 1, 1, 1);
                     _losePanel.SetActive(true);
                 } else {
                     ResetGame();
@@ -108,7 +136,13 @@ public class GameManager : MonoBehaviour
         }
     }
     private int _dialogueIndex;
+
+    private void OnVideoStarted() {
+
+        _videoPlayerImage.color = new Color(1, 1, 1, 1);
+    }
     private void OnVideoEnd() {
+        _videoPlayerImage.color = new Color(1,1,1,0);
         DialogueManager.instance.StartDialogue(_dialogues[_dialogueIndex]);
     }
 
@@ -129,8 +163,10 @@ public class GameManager : MonoBehaviour
     public void VerifyItem(ItemData itemData) {
         _timer.StopTimer();
         _gameState = GameState.Results;
+
         if (itemData) {
-            if(itemData == _selectedItemData) {
+            _videoPlayer.Prepare();
+            if (itemData == _selectedItemData) {
                 _winCount++;
                 _videoPlayer.clip = _videoClips[0];
                 _dialogueIndex = 1;
@@ -139,12 +175,17 @@ public class GameManager : MonoBehaviour
                 _videoPlayer.clip = _videoClips[1];
                 _dialogueIndex = 2;
             }
+
+
             _videoPlayer.Play();
+            _videoPlayerImage.color = new Color(1, 1, 1, 1);
         } else {
             DialogueManager.instance.StartDialogue(_dialogues[3]);
         }
         Player.Instance.EnablePlayer(false);
-       
+        Player.Instance.ResetPlayer();
+        _selectedItemData = null;
+
     }
 
     public void TimerEnd() {

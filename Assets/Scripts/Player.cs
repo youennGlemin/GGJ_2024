@@ -88,9 +88,12 @@ public class Player : MonoBehaviour
     }
 
     private void CollectItem(ItemHolder item) {
+        Player.Instance.EnablePlayer(false);
+
         _holdItemData = item.itemData;
         _holdItemImage.sprite = _holdItemData.sprite;
         _holdItemImage.color = new Color(1,1,1,1);
+        _animator.Play("Grab");
         item.Disable();
     }
 
@@ -102,7 +105,7 @@ public class Player : MonoBehaviour
 
     }
 
-    public void EnablePlayer(bool enable) {
+    public void EnablePlayer(bool enable ) {
         if (enable) {
             _controls.Enable();
         } else {

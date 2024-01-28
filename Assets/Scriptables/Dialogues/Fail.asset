@@ -16,12 +16,12 @@ MonoBehaviour:
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: mmmmh
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 99026d79c30417843894ba76f33302c6, type: 3}
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: mmmmh
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 99026d79c30417843894ba76f33302c6, type: 3}
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: Loser !!!
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 99026d79c30417843894ba76f33302c6, type: 3}

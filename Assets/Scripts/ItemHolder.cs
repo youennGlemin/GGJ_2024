@@ -8,6 +8,8 @@ public class ItemHolder : MonoBehaviour {
     [SerializeField]
     private PolygonCollider2D _polygonCollider2D;
 
+    public ItemPosition itemPosition;
+
     public ItemData itemData;
 
     public void Hydrate(ItemData itemData) {
@@ -28,5 +30,13 @@ public class ItemHolder : MonoBehaviour {
 
     private void Start() {
         Hydrate(itemData);
+    }
+
+    private void OnMouseOver() {
+        _spriteRenderer.color = new Color(0.7f, 0.7f, 0.7f);
+    }
+    private void OnMouseExit() {
+        _spriteRenderer.color = new Color(1f, 1f, 1f);
+
     }
 }

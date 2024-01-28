@@ -75,8 +75,8 @@ public class DialogueManager : MonoBehaviour {
             _currentDialogueData = value;
             toWrite = _currentDialogueData.lines[currentLineIndex].text;
             DisplayCharacters();
-            //audioSource.Pause();
-            //audioSource.clip = _currentDialogueData.lines[currentLineIndex].audioClip;
+            audioSource.Stop();
+            audioSource.clip = _currentDialogueData.lines[currentLineIndex].audioClip;
         }
     }
     private int currentLineIndex = 0;
@@ -99,6 +99,8 @@ public class DialogueManager : MonoBehaviour {
     public void StartDialogue(DialogueData dialogueData) { 
         dialogueCanvas.SetActive(true);
         currentDialogueData = dialogueData;
+        audioSource.Play();
+
         StartCoroutine(Write());
     }
 
@@ -121,6 +123,7 @@ public class DialogueManager : MonoBehaviour {
     private void DisplayCharacters() {
         //CharacterSpriteRenderer.sprite = currentDialogueData.lines[currentLineIndex].characterSprite;
         speakingCharacterNameText.text = currentDialogueData.lines[currentLineIndex].characterName;
+        audioSource.Play();
 
     }
 
