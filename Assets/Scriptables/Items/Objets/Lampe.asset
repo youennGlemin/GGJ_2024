@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Lampe
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 0d371d43bd13bd7429e1d72df0c135ad, type: 3}
-  description: "Comme d'habitude, tu as du mal avec les t\xE2ches \xE9l\xE9mentaires.
-    Apporte-moi une lampe, en pensant \xE0 la d\xE9brancher."
+  description: "Comme d'habitude, tu as du mal avec les taches \xE9l\xE9mentaires.
+    Apporte-moi une lampe, en pensant a la debrancher."
   itemPosition: 4097

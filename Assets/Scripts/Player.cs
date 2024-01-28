@@ -46,6 +46,8 @@ public class Player : MonoBehaviour
     private Image _holdItemImage;
     [SerializeField]
     private LayerMask _interactableLayer;
+    [SerializeField]
+    private AudioSource audioSource;
 
     private float _direction;
 
@@ -94,6 +96,7 @@ public class Player : MonoBehaviour
         _holdItemImage.sprite = _holdItemData.sprite;
         _holdItemImage.color = new Color(1,1,1,1);
         _animator.Play("Grab");
+        audioSource.Play();
         item.Disable();
     }
 

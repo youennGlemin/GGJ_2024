@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Parapluie
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 15dd0c2df16aad544bbf22c768b53d54, type: 3}
-  description: "C'est incroyable \xE0 quel point tu peux \xEAtre inutile. Trouves
-    moi un parapluie."
+  description: "C'est incroyable a quel point tu peux \xEAtre inutile. Trouves moi
+    un parapluie."
   itemPosition: 128
