@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Javel
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 1d400df790f6eb44f8c743fe0f93cf46, type: 3}
-  description: "Avec ton intellec limit\xE9, est-ce possible de m'apporter de la
-    javel? Pour information, \xE7a ne se boit pas."
+  description: "Avec ton intellec limite, est-ce possible de m'apporter de la javel?
+    Pour information, \xE7a ne se boit pas."
   itemPosition: 8193
