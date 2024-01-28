@@ -4031,7 +4031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690342688}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.005710125, y: -0.09529972, z: 0}
+  m_LocalPosition: {x: 0.009970665, y: -0.09529972, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5650,11 +5650,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6714039302761909810, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 6714039302491173411}
+    - target: {fileID: 6714039302761909810, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
       propertyPath: _holdItemImage
       value: 
       objectReference: {fileID: 1378899029}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
+--- !u!82 &6714039302491173411 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6714039302491173412, guid: 14a957da8bcb6c648ba91a75ce6389fa, type: 3}
+  m_PrefabInstance: {fileID: 6714039302491173410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7428936149255614390
 PrefabInstance:
   m_ObjectHideFlags: 0
