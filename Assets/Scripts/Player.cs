@@ -48,6 +48,8 @@ public class Player : MonoBehaviour
     private LayerMask _interactableLayer;
     [SerializeField]
     private AudioSource audioSource;
+    [SerializeField]
+    private List<AudioClip> _stepSounds;
 
     private float _direction;
 
@@ -117,6 +119,12 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void PlayStepSound() {
+        audioSource.Stop();
+
+        audioSource.clip = _stepSounds[Random.Range(0, _stepSounds.Count - 1)];
+        audioSource.Play();
+    }
     private void Update() {
         _direction = _controls.controls_proto.Direction.ReadValue<float>();
     }
