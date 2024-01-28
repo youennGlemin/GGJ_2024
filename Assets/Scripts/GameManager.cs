@@ -231,6 +231,4 @@ public class GameManager : MonoBehaviour
         audioSource.Play();
         
     }
-
-    public void Pause
 }

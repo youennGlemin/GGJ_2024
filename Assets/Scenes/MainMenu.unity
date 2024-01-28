@@ -604,6 +604,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1075760695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4703698969067744902, guid: 6b43e240278cd094aa858bc7e1478613, type: 3}
+  m_PrefabInstance: {fileID: 4703698970794673021}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1154279292
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,8 +706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0a0f159874ec841aa8bce323226075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursor: {fileID: 2800000, guid: f6401b7e7fec80346b6fc166b994c6e4, type: 3}
-  cursorCliked: {fileID: 2800000, guid: 47e1753519fe2214686fb68b9ef4dfd9, type: 3}
 --- !u!4 &1193187465
 Transform:
   m_ObjectHideFlags: 0
@@ -1052,7 +1055,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d67a614bbea41934688533aed42cb681, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1381,7 +1384,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1361969871}
+      - m_Target: {fileID: 1075760695}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1391,7 +1394,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2017452197
 MonoBehaviour:
