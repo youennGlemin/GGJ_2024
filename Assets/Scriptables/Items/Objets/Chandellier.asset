@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Chandellier
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: c428b477699a9f04dba183c52e7a893a, type: 3}
-  description: "C'est path\xE9tique \xE0 quel point tu es incomp\xE9tent. Apporte-moi
-    un chandelier, et NON tu n'essaies pas d'imiter Tarzan !"
+  description: C'est pathetique a quel point tu es incompetent. Apporte-moi un chandelier,
+    et NON tu n'essaies pas d'imiter Tarzan !
   itemPosition: 2

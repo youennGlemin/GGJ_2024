@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ciseaux
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 08cfd674fcbf1f44da16c49ecd414449, type: 3}
-  description: "Puisque tu as du mal avec les t\xE2ches simples, essaie de ne pas
-    te ridiculiser davantage. Apporte-moi une paire de ciseaux. Et \xE9vites de te
-    couper avec."
-  itemPosition: 1
+  description: Puisque tu as du mal avec les taches simples, essaie de ne pas te
+    ridiculiser davantage. Apporte-moi une paire de ciseaux. Et evites de te couper
+    avec.
+  itemPosition: 4097

@@ -18,6 +18,8 @@ public enum ItemPosition {
     Chiffon = 1 << 9,
     Eponge = 1 << 10,
     LiquideVaisselle = 1 << 11,
+    Horizontal = 1 << 12,
+    Vertical = 1 << 13,
 }
 
 [CreateAssetMenu()]

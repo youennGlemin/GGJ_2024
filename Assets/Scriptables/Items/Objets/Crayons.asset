@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Crayons
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 6718e811a26875d4d8e9863f69367455, type: 3}
-  description: "C'est incroyable \xE0 quel point tu es incapable. Peux-tu au moins
-    r\xE9ussir \xE0 apporter un simple crayon sans faire d'erreur?"
-  itemPosition: 1
+  description: "C'est incroyable a quel point tu es incapable. Peux-tu au moins reussir
+    \xE0 apporter un simple crayon sans faire d'erreur?"
+  itemPosition: 8193

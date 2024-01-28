@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Sceau
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a2022a6c8e321e947b6dd35e2e06acef, type: 3}
-  description: "Puisque l'intelligence a prit cong\xE9 chez toi, pourrais-tu te pousser
-    \xE0 apporter un simple sceau?  "
+  description: 'Puisque l''intelligence a prit conge chez toi, pourrais-tu te pousser
+    a apporter un simple sceau?  '
   itemPosition: 256

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bouillotte
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 7ea1dd1f04760be439c6f0274a767be1, type: 3}
-  description: "Comme d'habitude, tu es d'une inutilit\xE9 flagrante. Apporte-moi
-    une bouillotte, m\xEAme si je crains que cela demande plus de comp\xE9tences
-    que tu n'en poss\xE8des."
-  itemPosition: 9
+  description: Comme d'habitude, tu es d'une inutilie flagrante. Apporte-moi une
+    bouillotte, meme si je crains que cela demande plus de competences que tu n'en
+    possedes.
+  itemPosition: 8

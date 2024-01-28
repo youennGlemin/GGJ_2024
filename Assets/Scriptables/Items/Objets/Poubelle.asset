@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Poubelle
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 46401b2199127bc4984102715ebe5537, type: 3}
-  description: "Je te fais confiance malgr\xE9 tes capacit\xE9s. Apporte-moi une
-    poubelle et n'essaie m\xEAme pas de mettre ta t\xEAte dedans "
+  description: 'Je te fais confiance malgre tes capacites. Apporte-moi une poubelle
+    et n''essaie meme pas de mettre ta tete dedans '
   itemPosition: 2

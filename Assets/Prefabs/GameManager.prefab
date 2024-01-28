@@ -54,12 +54,27 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   _itemDatas:
-  - {fileID: 11400000, guid: 6382dd55746881a46934885b15be20be, type: 2}
-  - {fileID: 11400000, guid: 862d3b1174e10194cb277674d69fff31, type: 2}
-  - {fileID: 11400000, guid: 6382dd55746881a46934885b15be20be, type: 2}
-  - {fileID: 11400000, guid: 862d3b1174e10194cb277674d69fff31, type: 2}
-  - {fileID: 11400000, guid: 6382dd55746881a46934885b15be20be, type: 2}
-  - {fileID: 11400000, guid: 862d3b1174e10194cb277674d69fff31, type: 2}
+  - {fileID: 11400000, guid: 92387c25753f52f4a9379beefdc72b2c, type: 2}
+  - {fileID: 11400000, guid: edc1ebff728ffb246acb6239350a754a, type: 2}
+  - {fileID: 11400000, guid: e6b608d1c8ab0a548b8fc5e526f08dc5, type: 2}
+  - {fileID: 11400000, guid: 52103b19a6afcab459457fbc17c1cd26, type: 2}
+  - {fileID: 11400000, guid: 7b07866fee6e20542a2554813a03fd1e, type: 2}
+  - {fileID: 11400000, guid: 34e85000437f7ab4aa96bf5a8463cc26, type: 2}
+  - {fileID: 11400000, guid: 0f5753ec33775944e82a0f622c73999a, type: 2}
+  - {fileID: 11400000, guid: b5d22f35122e67f45adb5a537a47efdc, type: 2}
+  - {fileID: 11400000, guid: 3d504da8b6ac9054fb2da540e1245e21, type: 2}
+  - {fileID: 11400000, guid: dd54e6236006aff428643f5f48547c6d, type: 2}
+  - {fileID: 11400000, guid: 6b1115b4b63f85849820b5bc751db920, type: 2}
+  - {fileID: 11400000, guid: e7b10d3722a64044e8193135f59e58c1, type: 2}
+  - {fileID: 11400000, guid: eab56a5ec223d314ab03a01793299cb4, type: 2}
+  - {fileID: 11400000, guid: e1269b18c1f26444dae32ac4ef28599f, type: 2}
+  - {fileID: 11400000, guid: 5b87b4fdf5a07d545b73d0eef43eb257, type: 2}
+  - {fileID: 11400000, guid: 2dc1b6c6a5db98641a603d74f4137fff, type: 2}
+  - {fileID: 11400000, guid: d86332a52696fa8439ae1cd7834b8af6, type: 2}
+  - {fileID: 11400000, guid: fd824897b54c90e418eb6eadce816ff4, type: 2}
+  - {fileID: 11400000, guid: dd19ce13a3d84b54ebf2d7387d153ef7, type: 2}
+  - {fileID: 11400000, guid: ef427f15fed2d8c498dbe0b7c282fd2b, type: 2}
+  - {fileID: 11400000, guid: 3aa86caf7f1f71044af6a69f09b624fd, type: 2}
   _dialogues:
   - {fileID: 11400000, guid: f2563328fbe03e049bac17ba3ddaf525, type: 2}
   - {fileID: 11400000, guid: 30336ab617dc2544ba4c2044a96004f3, type: 2}
@@ -68,7 +83,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f82427a4b36a4544802dcf4f0bc1d2d, type: 2}
   _preItemPresentationText: 
   _postItemPresentationText: 
+  _videoPlayerImage: {fileID: 0}
+  _videoPlayer: {fileID: 0}
+  _videoPlayerPrefab: {fileID: 0}
+  _videoClips:
+  - {fileID: 32900000, guid: 094e49430e796574b890f6636d845f65, type: 3}
+  - {fileID: 32900000, guid: da3e4a2d51fe76c478b0ebd8ddc4ea73, type: 3}
+  - {fileID: 32900000, guid: 68c222859f26f3a448b336195f4eb5e3, type: 3}
+  - {fileID: 32900000, guid: 68c222859f26f3a448b336195f4eb5e3, type: 3}
   _requiredWins: 3
   _requiredLoss: 3
   _timer: {fileID: 0}
-  _allowedTime: 10
+  _allowedTime: 15
