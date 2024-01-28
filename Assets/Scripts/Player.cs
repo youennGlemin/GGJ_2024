@@ -82,7 +82,7 @@ public class Player : MonoBehaviour
         }
         else if(_hit.collider.gameObject.TryGetComponent(out Interactable interactable)) {
             interactable.Interact();
-        }else {
+        }else if(_hit.collider.tag == "Mom") {
             GameManager.Instance.VerifyItem(_holdItemData);
         }
     }
