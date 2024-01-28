@@ -206,6 +206,7 @@ public class GameManager : MonoBehaviour
 
     public void TimerEnd() {
         if(_gameState == GameState.Search) {
+            _lossCount++;
             _gameState = GameState.Results;
             Player.Instance.EnablePlayer(false);
             DialogueManager.instance.StartDialogue(_dialogues[4]);
