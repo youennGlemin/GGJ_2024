@@ -15,13 +15,14 @@ MonoBehaviour:
   lines:
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: mmmmh
-    audioClip: {fileID: 8300000, guid: 99026d79c30417843894ba76f33302c6, type: 3}
+    text: "Je ne m'attendais \xE0 rien mais je suis quand m\xEAme d\xE9\xE7u "
+    audioClip: {fileID: 0}
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: mmmmh
-    audioClip: {fileID: 8300000, guid: 99026d79c30417843894ba76f33302c6, type: 3}
+    text: "Je voulais t'appeler m\xE9diocrit\xE9 mais la pr\xE9fecture ne voulait
+      pas "
+    audioClip: {fileID: 0}
   - characterName: Mom
     characterSprite: {fileID: 0}
     text: Loser !!!
-    audioClip: {fileID: 8300000, guid: 99026d79c30417843894ba76f33302c6, type: 3}
+    audioClip: {fileID: 0}

@@ -15,5 +15,25 @@ MonoBehaviour:
   lines:
   - characterName: Mom
     characterSprite: {fileID: 0}
-    text: Not bad, could've been faster tho...
+    text: "Tu t'es surpass\xE9 mon grand ! "
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: 'Mieux vaux tard que jamais '
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: "Maman est impressionn\xE9e ! Tu as tout donn\xE9 ! "
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: "Pour te r\xE9compenser je vais remplir ta gamelle ce soir !"
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: "Tu es plus utile que le chien, apr\xE8s tout !"
+    audioClip: {fileID: 0}
+  - characterName: Mom
+    characterSprite: {fileID: 0}
+    text: "Je savais que tu en avais les capacit\xE9s !"
     audioClip: {fileID: 0}
