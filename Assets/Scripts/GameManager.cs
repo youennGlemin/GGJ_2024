@@ -46,8 +46,8 @@ public class GameManager : MonoBehaviour
     private VideoPlayer _videoPlayer;
     [SerializeField]
     private VideoPlayer _videoPlayerPrefab;
-    //[SerializeField]
-    //private texture _videoPlayerPrefab;
+    [SerializeField]
+    private RenderTexture _videoPlayerTexture;
 
     [SerializeField]
     private List<VideoClip> _videoClips = new();
@@ -119,6 +119,9 @@ public class GameManager : MonoBehaviour
                     _videoPlayer.clip = _videoClips[2];
 
 
+                    RenderTexture renderTexture = new RenderTexture(_videoPlayerTexture);
+                    _videoPlayer.targetTexture = renderTexture;
+                    _videoPlayerImage.texture = renderTexture;
                     _videoPlayer.Play();
                     _videoPlayerImage.color = new Color(1, 1, 1, 1);
                     _winPanel.SetActive(true);
@@ -126,6 +129,9 @@ public class GameManager : MonoBehaviour
                     _videoPlayer.Prepare();
                     _videoPlayer.clip = _videoClips[3];
 
+                    RenderTexture renderTexture = new RenderTexture(_videoPlayerTexture);
+                    _videoPlayer.targetTexture = renderTexture;
+                    _videoPlayerImage.texture = renderTexture;
                     _videoPlayer.Play();
                     _videoPlayerImage.color = new Color(1, 1, 1, 1);
                     _losePanel.SetActive(true);
@@ -139,10 +145,6 @@ public class GameManager : MonoBehaviour
     }
     private int _dialogueIndex;
 
-    private void OnVideoStarted() {
-
-        _videoPlayerImage.color = new Color(1, 1, 1, 1);
-    }
     private void OnVideoEnd() {
         _videoPlayerImage.color = new Color(1,1,1,0);
         DialogueManager.instance.StartDialogue(_dialogues[_dialogueIndex]);
@@ -179,6 +181,9 @@ public class GameManager : MonoBehaviour
             }
 
 
+            RenderTexture renderTexture = new RenderTexture(_videoPlayerTexture);
+            _videoPlayer.targetTexture = renderTexture;
+            _videoPlayerImage.texture = renderTexture;
             _videoPlayer.Play();
             _videoPlayerImage.color = new Color(1, 1, 1, 1);
         } else {
